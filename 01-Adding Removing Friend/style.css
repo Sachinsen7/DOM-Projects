@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: silver;
+    overflow: hidden;
+}
+
+.card{
+    height: 450px;
+    width: 800px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    /* cursor: pointer; */
+
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    /* object-position: center; */
+    padding: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 20px;
+}
+
+.card h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card #bio {
+    position: absolute;
+    top: 70px;
+    left: 220px;
+    
+    /* margin: 20px 12px; */
+}
+
+.card p{
+    margin-top: 40px;
+}
+
+.card .btn-container{
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.btn-container #add {
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    background-color: #125B9A;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    /* transition: 2s ease-in; */
+}
+
+
+
+
+
+.btn-container #remove {
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    background-color: silver;
+    color: black;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+}
+
+.line {
+    border-top: 1px solid black; 
+    width: 100%;                 
+    margin: 20px 0;
+    position: absolute;
+    top: 160px;
+}
+
+.head-sec{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+#options p, #option select{
+    display: inline;
+    /* top: 170px; */
+    padding: 5px;
+    margin-left: 20px;
+    position: relative;
+}
+
+select{
+
+    border: none;
+}
+
+#options{
+    /* width: 70%; */
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+
+#options p {
+    color: black;
+    cursor: pointer;
+}
+
+#options p:hover{
+    color: #125B9A;
+    font-weight: 600;
+}
+
+.card #location{
+    position: relative;
+    top: 210px;
+    left: 0px;
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 150px;
+    width: 45%;
+    background-color: #dadada;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+}
+
+#location h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+.living {
+    margin-left: 0px;
+    position: absolute;
+    top: 60px;
+}
+
+.from {
+    position: absolute;
+    top: 100px;
+}
+
+.living, .from{
+    display: flex;
+    align-items: center;
+    /* margin-left: 10px; */
+}
+
+.living svg, .from svg {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.living p, .from p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.bio {
+    position: relative;
+    left: 400px;
+    top: 60px;
+    /* margin-top: 1px; */
+    margin-left: 20px;
+    height: 150px;
+    width: 45%;
+    background-color: #dadada;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content within .bio */
+}
+
+#main {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    text-align: left; /* Align text to the left */
+}
+
+#main h1 {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 0;
+    height: 20px;
+    width: 50px;
+}
+
+#main p {
+    margin: 0;
+    font-size: 1em;
+    display: inline;
+}
